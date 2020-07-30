@@ -14,7 +14,9 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatTableModule} from '@angular/material/table';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -33,8 +35,10 @@ import {MatTableModule} from '@angular/material/table';
         MatTabsModule,
         MatRadioModule,
         MatSlideToggleModule,
-        MatTableModule
-        
+        MatTableModule,
+        MatSidenavModule,
+        MatCheckboxModule,
+        MatDialogModule
     ],
     exports: [
         MatCardModule,
@@ -50,7 +54,10 @@ import {MatTableModule} from '@angular/material/table';
         MatTabsModule,
         MatRadioModule,
         MatSlideToggleModule,
-        MatTableModule
+        MatTableModule,
+        MatSidenavModule,
+        MatCheckboxModule,
+        MatDialogModule
        ],
     providers: [
         {

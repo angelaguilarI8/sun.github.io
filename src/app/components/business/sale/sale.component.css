@@ -19,6 +19,7 @@ h3{
 
 p{
   text-align: justify;
+  margin: 10px 0 16px;
 }
 
 
@@ -32,8 +33,16 @@ p{
   width: 100%;
 }
 
-.submitBtnContainer {
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
+.btn-colorRe {
+  color: #57409F !important;
+  font-weight: 500;
+  background: rgba(0,0,0,0);
+  border: 2px solid;
+  border-color: #57409F;
+  transition: all 1s ease;
+  position: relative;
+}
+.btn-colorRe:hover {
+  background: #57409F;
+  color: #fff !important;
 }

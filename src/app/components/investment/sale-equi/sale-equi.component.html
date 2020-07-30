@@ -5,29 +5,29 @@
   <form [formGroup]="formSaleEq">
     <div class="main-container">
         <div class="form-group">
-          <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
-            <mat-label>¿Donde?</mat-label>
-            <input matInput #input maxlength="10" placeholder="Nombre de tu negocio" formControlName="donde">
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>¿Ubicación?</mat-label>
+            <input matInput placeholder="Nombre de tu negocio" formControlName="ubicacion">
           </mat-form-field>
         </div>
       <div class="form-row">
         <div class="form-group col-md-6">
-          <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
+          <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>Tipo de negocio</mat-label>
-            <input matInput #input maxlength="10" placeholder="$ 100,000.00" formControlName="tipoNegocio">
+            <input matInput placeholder="$ 100,000.00" formControlName="tipoNegocio">
           </mat-form-field>
         </div>
         
         <div class="form-group col-md-3">
           <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
             <mat-label>Precio de equipamiento desde </mat-label>
-            <input matInput #input maxlength="10" placeholder="$ 5,000.00" formControlName="precioDesde">
+            <input matInput #input maxlength="10" placeholder="$ 5,000.00" formControlName="montoDesde">
           </mat-form-field>
         </div>
         <div class="form-group col-md-3">
             <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
               <mat-label>Precio de equipamiento hasta</mat-label>
-              <input matInput #input maxlength="10" placeholder="$ 5,000.00" formControlName="precioHasta">
+              <input matInput #input maxlength="10" placeholder="$ 5,000.00" formControlName="montoHasta">
             </mat-form-field>
           </div>
       </div>
@@ -39,11 +39,11 @@
       <div class="form-group">
         <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
           <mat-label>Antigüedad de publicación</mat-label>
-          <textarea matInput placeholder="Describe detalladamente" formControlName="antiguedadPubl"></textarea>
+          <textarea matInput placeholder="Describe detalladamente" formControlName="antiguedad"></textarea>
         </mat-form-field>
       </div>
     </div>
-    <div class="submitBtnContainer">
-      <button mat-stroked-button color="primary" (click)="consultar()">Ver Resultados</button>
+    <div class="text-lg-right">
+      <button mat-stroked-button class="btn-colorRe" (click)="consultar()">Ver Resultados</button>
     </div>  
   </form>

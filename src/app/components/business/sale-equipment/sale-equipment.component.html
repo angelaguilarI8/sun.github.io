@@ -1,5 +1,4 @@
 <div class="main-container">
-    <h3>Venta de Equipo</h3>
     <p>¿Necesitas Vender Equipamiento de tu Negocio?
         <span>Si te quedaste con el equipo y Mobiliario de tu Negocio que has decidido cerrar, puedes publicar la venta
             de dicho equipamiento y te ponemos en contacto con la gente interesada en adquirir tus activos:Mobiliario
@@ -15,14 +14,14 @@
         <div class="form-row">
             <div class="form-group col-md-4">
                 <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
-                    <mat-label>Nombre del Negocio</mat-label>
+                    <mat-label>Nombre del Negocio*</mat-label>
                     <input matInput #input maxlength="10" placeholder="Nombre de tu negocio"
-                        formControlName="nombreNegocio">
+                        formControlName="nombre">
                 </mat-form-field>
             </div>
             <div class="form-group col-md-4">
                 <mat-form-field appearance="outline" class="example-full-width">
-                    <mat-label>Tipo de Negocio</mat-label>
+                    <mat-label>Tipo de Negocio*</mat-label>
                     <mat-select formControlName="tipoNegocio">
                         <mat-option value="option">Option</mat-option>
                         <mat-option value="option">Option1</mat-option>
@@ -31,27 +30,34 @@
                 </mat-form-field>
             </div>
             <div class="form-group col-md-4">
-                <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
-                    <mat-label>Monto Total del Mobiliario</mat-label>
-                    <input matInput #input maxlength="10" placeholder="$ 100,000.00" formControlName="montoTotal">
+                <mat-form-field  appearance="outline" class="example-full-width">
+                    <mat-label>Monto Total del Mobiliario*</mat-label>
+                    <input matInput placeholder="$ 100,000.00" formControlName="monto">
                 </mat-form-field>
             </div>
         </div>
         <div class="form-group">
-            <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
-                <mat-label>¿Ubicación del Negocio?</mat-label>
-                <input matInput #input maxlength="10" placeholder="Jalisco" formControlName="ubicacion">
+            <mat-form-field hintLabel="Max 60 characters" appearance="outline" class="example-full-width">
+                <mat-label>¿Ubicación del Negocio?*</mat-label>
+                <input matInput #input maxlength="60" placeholder="Jalisco" formControlName="ubicacion">
             </mat-form-field>
         </div>
         <div class="form-group ">
-            <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
-                <mat-label>Describe o Lista el Mobiliario y/o Equipo a vender</mat-label>
-                <textarea matInput placeholder="Lista del Mobilario" formControlName="descripcion"></textarea>
+            <mat-form-field hintLabel="Max 200 characters" appearance="outline" class="example-full-width">
+                <mat-label>Describe o Lista el Mobiliario y/o Equipo a vender*</mat-label>
+                <textarea matInput  #input maxlength="200" placeholder="Lista del Mobilario" formControlName="descripcion"></textarea>
             </mat-form-field>
         </div>
-
-        <div class="submitBtnContainer">
-            <button mat-stroked-button color="primary" class="btn guardar" (click)="consultar()">Guardar</button>
+        <div class="col-12">
+            <div class="form-group"> 
+                <label for="file" class="labels">Selecciona tu nueva imagen:</label>
+                <input #fileInput name="files[]" type="file" (change)="onFileSelected($event)"
+                    accept="application/jpeg">        
+            </div>
         </div>
+      
+          <div class="text-lg-right">
+            <button mat-stroked-button class="btn-colorRe" (click)="consultar()">Publicar</button>
+          </div>
     </div>
 </form>

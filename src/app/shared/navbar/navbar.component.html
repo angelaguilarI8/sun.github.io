@@ -1,15 +1,37 @@
-<mat-toolbar color="primary" class="mat-elevation-z6">
-    <span>SUN</span>
+<nav class="navbar bg-light navbar-expand-lg ">
+    <a class="navbar-brand" routerLink="esp/home">SUN</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons">menu </span>  
+    </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
 
-    <span class="spacer"></span>
-    <a mat-button routerLinkActive="active" routerLink="user/register">DARME DE ALTA</a>
-    <a mat-button routerLinkActive="active" routerLink="user/login">ENTRAR</a>
-    <!-- <a mat-raised-button color="accent" routerLinkActive="active">Cerrar Sesión</a> -->
-    <a mat-button routerLinkActive="active" routerLink="esp">Cómo funciona</a>
-    <button mat-button [matMenuTriggerFor]="menu">Invierte tu dinero</button>
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item routerLink="investment/member">¿Quiero ser socio?</button> 
-        <button mat-menu-item routerLink="investment/transfer">Adquirir Negocio</button>
-        <button mat-menu-item routerLink="investment/sale">Comprar equipamiento</button> 
-    </mat-menu>
-</mat-toolbar>
+            <span class="example-spacer"></span>
+             <li class="nav-item">
+                <a mat-button class="nav-link" routerLink="esp/info-invers" *ngIf="verinicio === true">¿Eres inversionista?</a>
+            </li>
+            <li class="nav-item">
+                <a mat-button class="nav-link" routerLink="esp/info-help" *ngIf="verinicio === true">¿Necesitas apoyo?</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a mat-button class="nav-link btn-colorRe" routerLinkActive="active" routerLink="user/register" color="primary"> Registrate</a>
+            </li> -->
+            <span class="example-icon"></span>
+            <li class="nav-item">
+                <a mat-button class="nav-link btn-color"  (click)="inciasesion()" color="primary"  *ngIf="verinicio === true">Iniciar sesión</a>
+            </li> 
+             <li class="nav-item">
+                <a mat-button class="nav-link" routerLink="business"  *ngIf="verperfil === true">Apoyo a tu negocio</a>
+            </li> 
+             <li class="nav-item">
+                <a mat-button class="nav-link" routerLink="investment" *ngIf="verperfil === true">Invertir</a>
+            </li> 
+             <li class="nav-item">
+                <a mat-button class="nav-link" routerLink="user/profile/id" *ngIf="verperfil === true">Mi Perfil</a>
+            </li> 
+             <li class="nav-item">
+                <a mat-button color="warn" class="nav-link btn-colorCe" (click)="onLogout()"  *ngIf="verperfil === true">Cerrar Sesión</a>
+            </li> 
+    </ul>
+ </div>
+</nav>

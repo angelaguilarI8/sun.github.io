@@ -1,0 +1,48 @@
+.containers .mat-form-field  {
+    margin-left: 8px;
+  }
+
+  .mat-card {
+    max-width: 1000px; 
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 13px;   
+    margin-bottom: 100px; 
+    /* position: absolute; */
+  } 
+
+  .example-card{
+    max-width: 800%;
+  }
+  
+  .example-full-width {
+      width: 100%;
+  }
+
+  h1{
+    text-align: center;
+  }
+  
+  p{
+    text-align: justify;
+  }
+  .btn-colorRe {
+    color: #57409F !important;
+    font-weight: 500;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #57409F;
+    transition: all 1s ease;
+    position: relative;
+  }
+  .btn-colorRe:hover {
+    background: #57409F;
+    color: #fff !important;
+  }
+  
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  

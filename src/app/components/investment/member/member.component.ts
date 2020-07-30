@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-member',
@@ -18,16 +18,17 @@ formMember: FormGroup;
 
   formMembe(){
     this.formMember = new FormGroup({
-      donde : new FormControl( null ),
-      tipoSocio: new FormControl( null ),
-      tipoNegocio: new FormControl( null ),
-      masSocio: new FormControl( null ),
-      precioDesde: new FormControl( null ),
-      precioHasta: new FormControl( null ),
-      sinAntiguedad: new FormControl( null ),
-      antiguedadPubl : new FormControl( null )
+      ubicacion : new FormControl( null, Validators.required ),
+      tipoSocio: new FormControl( null, Validators.required ),
+      tipoNegocio: new FormControl( null, Validators.required ),
+      masSocio: new FormControl( null, Validators.required ),
+      precioDesde: new FormControl( null, Validators.required ),
+      precioHasta: new FormControl( null, Validators.required ),
+      excluirAntinguedad: new FormControl( null, Validators.required ),
+      antiguedadPubl : new FormControl( null, Validators.required )
     })
   }
+
 
   consultar(){
     console.log(this.formMember.value);

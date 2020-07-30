@@ -1,0 +1,22 @@
+.example-card {
+  max-width: 100%;
+}
+
+.mat-card{
+  margin-top: 40px;
+  border-radius: 13px;   
+  margin-bottom: 100px; 
+}
+
+.mat-form-field {
+    margin-top: 16px;
+  }
+
+  .mat-tab-group {
+    margin-bottom: 48px;
+  }
+
+  h2{
+    text-align: center; 
+    margin: 10px 0 16px;
+  }

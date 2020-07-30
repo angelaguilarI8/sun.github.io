@@ -1,0 +1,15 @@
+.example-button-row button {
+    margin-right: 8px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #57409F;
+}
+
+a {
+    color: #0d242c;
+    text-decoration: none;
+    background-color: transparent;
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-tranfer',
@@ -18,12 +18,12 @@ export class TranferComponent implements OnInit {
 
   formTranfe(){
     this.formTranfer = new FormGroup({
-      donde: new FormControl( null ),
-      tipoNegocio: new FormControl( null ),
-      precioDesde: new FormControl( null ),
-      precioHasta: new FormControl( null ),
-      sinAntiguedad: new FormControl( null ),
-      antiguedadPubl: new FormControl( null )
+      ubicacion: new FormControl( null, Validators.required ),
+      tipoNegocio: new FormControl( null, Validators.required ),
+      precioDesde: new FormControl( null, Validators.required ),
+      precioHasta: new FormControl( null, Validators.required ),
+      sinAntiguedad: new FormControl( null, Validators.required ),
+      antiguedadPubl: new FormControl( null, Validators.required )
     })
   }
 

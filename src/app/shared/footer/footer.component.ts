@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+    autor: any = { nombre:'ies-Systems ', apellido:'SUN' }
   constructor() { }
 
   ngOnInit(): void {

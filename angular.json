@@ -29,7 +29,7 @@
               "src/styles.css",
               {
                 "input": "./node_modules/bootstrap/dist/css/bootstrap.css"
-            }
+              }
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
@@ -126,6 +126,10 @@
               "devServerTarget": "sun:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

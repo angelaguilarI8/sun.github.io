@@ -1,26 +1,26 @@
 <div class="main-container">
-    <h3>Registrate</h3>
+    <h3>Encuentra el mejor negocio</h3>
   </div>
   
   <form [formGroup]="formMember">
     <div class="main-container">
         <div class="form-group">
-          <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
-            <mat-label>¿Donde?</mat-label>
-            <input matInput #input maxlength="10" placeholder="Nombre de tu negocio" formControlName="donde">
+          <mat-form-field  appearance="outline" class="example-full-width">
+            <mat-label>¿Ubicación?*</mat-label>
+            <input matInput placeholder="Ubicacion" formControlName="ubicacion">
           </mat-form-field>
         </div>
       <div class="form-row">
         <div class="form-group col-md-4">
-          <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
-            <mat-label>Tipo de negocio</mat-label>
-            <input matInput #input maxlength="10" placeholder="$ 100,000.00" formControlName="tipoSocio">
+          <mat-form-field  appearance="outline" class="example-full-width">
+            <mat-label>Tipo de negocio*</mat-label>
+            <input matInput placeholder="$ 100,000.00" formControlName="tipoNegocio">
           </mat-form-field>
         </div>
         <div class="form-group col-md-4">
           <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
-            <mat-label>Tipo de socio</mat-label>
-            <input matInput #input maxlength="10" placeholder="$ 10,000.00" formControlName="tipoNegocio">
+            <mat-label>Tipo de socio*</mat-label>
+            <input matInput placeholder="$ 10,000.00" formControlName="tipoSocio">
           </mat-form-field>
         </div>
         <div class="form-group col-md-2">
@@ -45,13 +45,13 @@
               </mat-radio-group>
         </div>
         <div class="form-group col-md-6">
-            <mat-slide-toggle formControlName="sinAntiguedad">Excluir Negocios sin Antigüedad</mat-slide-toggle>
+            <mat-slide-toggle formControlName="excluirAntinguedad">Excluir Negocios sin Antigüedad</mat-slide-toggle>
         </div>
       </div>
       <div class="form-group">
         <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="example-full-width">
           <mat-label>FILTROS AVANZADOS </mat-label>
-          <textarea matInput placeholder="Describe detalladamente" formControlName="donde"></textarea>
+          <textarea matInput placeholder="Describe detalladamente" formControlName="ubicacion"></textarea>
         </mat-form-field>
       </div>
       <div class="form-group">
@@ -61,7 +61,7 @@
         </mat-form-field>
       </div>
     </div>
-    <div class="submitBtnContainer">
-      <button mat-stroked-button color="primary" (click)="consultar()">Ver Resultados</button>
+    <div class="text-lg-right">
+      <button mat-stroked-button class="btn-colorRe" (click)="consultar()">Ver Resultados</button>
     </div>  
   </form>
