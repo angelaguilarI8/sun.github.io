@@ -21,10 +21,12 @@ import { ResulCLiquidityComponent } from './components/resultComplete/resul-cliq
 import { PayComponent } from './components/membership/pay/pay.component';
 import { InverComponent } from './components/user/register/inver/inver.component';
 import { EmpreComponent } from './components/user/register/empre/empre.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 
 const routes: Routes = [
-  { path : 'user/login', component : LoginComponent },
+  /* { path : 'user/login', component : LoginComponent },
   { path : 'user/register/investment', component : InverComponent },
   { path : 'user/register/entrepreneur', component : EmpreComponent },
   { path : 'user/profile/:id', component : ProfileComponent },
@@ -44,7 +46,9 @@ const routes: Routes = [
   { path : 'result/sale', component: ResultSaleComponent },
   { path : 'result/sale-equipament', component: ResultSaleEquipamentComponent },
   { path : 'pay', component: PayComponent },
-  { path : 'prueba', component: ResulCLiquidityComponent }
+  { path : 'prueba', component: ResulCLiquidityComponent },
+  
+  { path : '', component: NavbarComponent } */
 
 ];
 

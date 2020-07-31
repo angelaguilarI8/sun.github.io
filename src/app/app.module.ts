@@ -7,11 +7,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProfileComponent } from './components/profile/profile.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { FooterComponent } from './shared/footer/footer.component';
+/* import { ProfileComponent }from './components/profile/profile.component'; 
+import { NavbarComponent } from './shared/navbar/navbar.component'; */
+/* import { FooterComponent } from './shared/footer/footer.component'; */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginComponent } from './components/user/login/login.component';
+/* import { LoginComponent } from './components/user/login/login.component';
 import { LiquidityComponent } from './components/business/liquidity/liquidity.component';
 import { SaleComponent } from './components/business/sale/sale.component';
 import { SaleEquipmentComponent } from './components/business/sale-equipment/sale-equipment.component';
@@ -33,22 +33,25 @@ import { ResulCLiquidityComponent } from './components/resultComplete/resul-cliq
 import { ResulCSaleComponent } from './components/resultComplete/resul-csale/resul-csale.component';
 import { PayComponent } from './components/membership/pay/pay.component';
 import { InverComponent } from './components/user/register/inver/inver.component';
-import { EmpreComponent } from './components/user/register/empre/empre.component';
+import { EmpreComponent } from './components/user/register/empre/empre.component'; */
 import { HttpClientModule } from '@angular/common/http';
 import { safeUrlPipe } from './shared/pipes/safe-url.pipe';
-import { ModalLiquidezComponent } from './components/modals/modal-liquidez/modal-liquidez.component';
+/* import { ModalLiquidezComponent } from './components/modals/modal-liquidez/modal-liquidez.component';
 import { ModalTraspasoComponent } from './components/modals/modal-traspaso/modal-traspaso.component';
-import { ModalEquiposComponent } from './components/modals/modal-equipos/modal-equipos.component';
+import { ModalEquiposComponent } from './components/modals/modal-equipos/modal-equipos.component'; */
 import { FctrlxAngularFileReader } from 'fctrlx-angular-file-reader';
+
+import { PageModule} from './components/pages.module';
 
 
 @NgModule({
   entryComponents:[
-    ModalLiquidezComponent,
+  /*   ModalLiquidezComponent, */
   ],
   declarations: [
     AppComponent,
-    ProfileComponent,
+    
+   /*  ProfileComponent,
     NavbarComponent,
     FooterComponent,
     LoginComponent,
@@ -73,11 +76,11 @@ import { FctrlxAngularFileReader } from 'fctrlx-angular-file-reader';
     ResulCSaleComponent,
     PayComponent,
     InverComponent,
-    EmpreComponent,
+    EmpreComponent, */
     safeUrlPipe,
-    ModalLiquidezComponent,
+    /* ModalLiquidezComponent,
     ModalTraspasoComponent,
-    ModalEquiposComponent
+    ModalEquiposComponent */
   ],
   imports: [
     MaterialModule,
@@ -87,7 +90,8 @@ import { FctrlxAngularFileReader } from 'fctrlx-angular-file-reader';
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
-    FctrlxAngularFileReader
+    FctrlxAngularFileReader,
+    PageModule,
     
   ],
   exports: [
