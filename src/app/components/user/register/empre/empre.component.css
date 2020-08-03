@@ -7,6 +7,24 @@
   /* position: absolute; */
 } 
 
+.izquierda{
+  background-image:  linear-gradient(#1c1c6c, #1c1c6c);
+  height: 100vh;
+  width: 50%;
+}
+
+.derecha{
+  background-image:  linear-gradient(#1c1c6c, #1c1c6c);
+  background-size: cover ;
+  background-position: center;
+  width: 50%;
+  height: 100vh;
+}
+
+#pantalla-dividida{
+  display: flex;
+}
+
 .example-card{
   max-width: 100%;
 }
